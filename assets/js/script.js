@@ -1,2 +1,6 @@
-var name = prompt('Saisir votre nom:');
-alert('Bonjour, ' + name)
+var firstnameElt = document.getElementById("firstname");
+firstnameElt.value = "MonPseudo";
+
+document.getElementById('submit').onclick = function resumeForm() {
+  alert('bonjour !');
+};
