@@ -1,2 +1,2 @@
-var name = prompt('Entrez votre nom:');
+var name = prompt('Saisir votre nom:');
 alert('Bonjour, ' + name)
