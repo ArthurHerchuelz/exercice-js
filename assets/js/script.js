@@ -1,2 +1,5 @@
-var name = prompt('Saisir votre nom:');
-alert('Bonjour, ' + name)
+var y = 5;
+var x = 2;
+var quotient = Math.floor(y/x);
+var remainder = y % x;
+alert(remainder);
