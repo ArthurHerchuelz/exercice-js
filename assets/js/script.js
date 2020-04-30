@@ -1,5 +1,5 @@
 // Création de la fonction de calcul et action onclick
-document.getElementById('submit').onclick =function calculation() {
+document.getElementById('submit').onclick = function calculation() {
 // Récupération des valeurs
 var shoeSize = document.getElementById('shoesize').value;
 var yearBirth = document.getElementById('yearBirth').value;
