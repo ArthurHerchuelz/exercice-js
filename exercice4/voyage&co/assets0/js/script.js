@@ -1,9 +1,13 @@
-let lastName;
-let firstName;
-let city;
-lastName = 'Doe';
-firstName = 'John';
-city = 'New-York';
-alert('Nom : ' + lastName + '\nPrénom : ' + firstName + '\nVille : ' +  city);
+document.getElementById('Block1').style.visibility = 'hidden';
+document.getElementById('Block2').style.visibility = 'hidden';
+document.getElementById('Block3').style.visibility = 'hidden';
 
-document.getElementById(#Block1).style.display = none;
+
+document.onscroll = function onscroll() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+   document.getElementById('Block1').style.visibility = 'visible';
+ }
+  else {
+  document.getElementById('Block1').style.visibility = 'hidden';
+  }
+}
