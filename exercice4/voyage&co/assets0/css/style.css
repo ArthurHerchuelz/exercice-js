@@ -53,7 +53,15 @@ li > a:hover, #navBarIcon:hover{
   display: flex;
   flex-direction: column;
 }
-.block{
+#Block1{
+  text-align: center; /* les enfants de .bloc sont centrés horizontalement */
+  margin: 1.5em; /* marges externes */
+}
+#Block2{
+  text-align: center; /* les enfants de .bloc sont centrés horizontalement */
+  margin: 1.5em; /* marges externes */
+}
+#Block3{
   text-align: center; /* les enfants de .bloc sont centrés horizontalement */
   margin: 1.5em; /* marges externes */
 }
