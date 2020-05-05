@@ -1,13 +1,13 @@
-document.getElementById('Block1').style.visibility = 'hidden';
-document.getElementById('Block2').style.visibility = 'hidden';
-document.getElementById('Block3').style.visibility = 'hidden';
-
-
-document.onscroll = function onscroll() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-   document.getElementById('Block1').style.visibility = 'visible';
- }
-  else {
-  document.getElementById('Block1').style.visibility = 'hidden';
+// déclaration de la function pageload qui masque les blocks au chargement de la page
+window.onload = function pageLoad() {
+  document.getElementById('blockLine').style.visibility = 'hidden';
+}
+// déclaration de la function onScroll qui permet de faire réapparaitre les blocks au scroll de la fenêtre
+window.onscroll = function onScroll() {
+  // récupération de la valeur correspondant au nombre de pixels scrollés verticalement
+  var scrollTopValue = window.scrollY;
+  // Condition permettant de faire réapparaitre les blocks lorsque l'on a scrollé 300px
+  if (scrollTopValue > 300) {
+    document.getElementById('blockLine').style.visibility = 'visible';
   }
 }
